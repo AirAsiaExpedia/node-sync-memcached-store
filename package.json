@@ -1,0 +1,31 @@
+{
+  "name": "sync-memcached-store",
+  "version": "0.0.1",
+  "description": "A synchronous Fibers-powered memcached store for SyncCache module",
+  "main": "sync-memcached-store.js",
+  "scripts": {
+    "test": "NODE_ENV=test mocha -w test/"
+  },
+  "keywords": [
+    "sync",
+    "cache",
+    "store",
+    "memcached"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AirAsiaExpedia/node-sync-memcached-store"
+  },
+  "author": "Jerome Touffe-Blin <jtblin@gmail.com>",
+  "license": "BSD-2-Clause",
+  "dependencies": {
+    "memcached": "~0.2.8",
+    "syncho": "0.0.2"
+  },
+  "devDependencies": {
+    "mocha": "~1.18.2",
+    "chai": "~1.9.1",
+    "sinon": "~1.9.0",
+    "sinon-chai": "~2.5.0"
+  }
+}
