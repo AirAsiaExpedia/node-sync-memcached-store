@@ -35,3 +35,9 @@ function mySyncFunction () {
 - `ns` - optional namespace
 - `maxAge` - maximum number of milliseconds to keep items, defaults **60000**
 - `timeout` - operation timeout, defaults **1000**
+
+## Testing
+
+Unit tests: `npm test`
+
+Integration tests (require local memcached server running on default port): `npm run integration`

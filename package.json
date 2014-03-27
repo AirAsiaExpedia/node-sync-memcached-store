@@ -1,10 +1,11 @@
 {
   "name": "sync-memcached-store",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A synchronous Fibers-powered memcached store for SyncCache module",
   "main": "sync-memcached-store.js",
   "scripts": {
-    "test": "NODE_ENV=test mocha -w test/"
+    "test": "NODE_ENV=test mocha -w -g Unit test/",
+    "integration": "NODE_ENV=test mocha -w -g Integration test/"
   },
   "keywords": [
     "sync",

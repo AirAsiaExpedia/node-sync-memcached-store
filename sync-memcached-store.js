@@ -10,7 +10,7 @@ function MemcachedStore (options) {
   if (! options || ! options.uri)
     throw new Error("Must pass a memcached connection string or an option object with at least a `uri` property.");
 
-  this.lifetime = options.maxAge/1000 || 60;
+  this.lifetime = options.maxAge && options.maxAge >= 1000 ? parseInt(options.maxAge/1000) : 60;
 
   // TODO: fix timeout connection not firing!!!
   this.mc = new MemcachedStore.Memcached(options.uri, {namespace: options.ns || '', timeout: options.timeout || 1000});
