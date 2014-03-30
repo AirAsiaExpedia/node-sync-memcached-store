@@ -1,6 +1,6 @@
 {
   "name": "sync-memcached-store",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "A synchronous Fibers-powered memcached store for SyncCache module",
   "main": "sync-memcached-store.js",
   "scripts": {
@@ -21,7 +21,7 @@
   "license": "BSD-2-Clause",
   "dependencies": {
     "memcached": "~0.2.8",
-    "syncho": "0.0.2"
+    "syncho": "~0.0.3"
   },
   "devDependencies": {
     "mocha": "~1.18.2",
